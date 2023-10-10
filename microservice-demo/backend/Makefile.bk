@@ -1,0 +1,3 @@
+
+build-backend:
+	go clean && GOOS=linux GOARCH=darwin/arm64 go build -o backend  -ldflags="-X main.BuildStamp=`date +%Y-%m-%d.%H:%M:%S`" backend.go
